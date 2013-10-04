@@ -1,0 +1,35 @@
+commit 2009c67c11303b9ac9c1d821e545d710f914c27a
+Author: Paulo Meirelles <paulo@softwarelivre.org>
+Date:   Wed Sep 25 14:03:41 2013 -0300
+
+    Adicionando e-mail no README
+
+commit 13d2348d27e339dd5b0fb39e597852476d57e518
+Author: Paulo Meirelles <paulo@softwarelivre.org>
+Date:   Wed Apr 10 23:31:37 2013 -0300
+
+    Removendo .class e adicionando .gitignore
+
+commit 2783ae74403dbf5b3246e0252b39008d6d1b5bfb
+Author: Paulo Meirelles <paulo@softwarelivre.org>
+Date:   Tue Apr 9 02:34:26 2013 -0300
+
+    Adicionando texto da licença GPL V3
+
+commit 0f76db71d3f69ce9fcc156dd21b26fcf97347721
+Author: Paulo Meirelles <paulo@softwarelivre.org>
+Date:   Tue Apr 9 02:27:01 2013 -0300
+
+    Adicionando um exemplo de cadastro de atleta
+
+commit 8140bcdcd93c684ec47f984755c92071d98ac752
+Author: Paulo Meirelles <paulo@softwarelivre.org>
+Date:   Tue Apr 9 02:26:07 2013 -0300
+
+    Atualizando arquivo README
+
+commit 9e5eecbfd399942e8ba10251f6c0ce12dbcc9b08
+Author: Paulo Meirelles <paulo@softwarelivre.org>
+Date:   Mon Apr 8 21:45:37 2013 -0700
+
+    Initial commit

@@ -61,6 +61,7 @@ public class Atleta {
     public void setNome(String nome) {
         this.nome = nome;
     }
+    
 
     public String getNomeMae() {
         return nomeMae;
