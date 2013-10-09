@@ -1,6 +1,4 @@
 
-
-import controleatleta.ControleJogadorDeBasquete;
 import controleatleta.JogadorDeBasquete;
 import java.util.ArrayList;
 
@@ -11,9 +9,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 
-public class NewEmptyJUnitTest {
+public class ControleJogadorDeBasqueteJUnitTest {
     
-                ControleJogadorDeBasquete umControle;
+                
                 private ArrayList<JogadorDeBasquete> listaJogadoresDeBasquete;
     
     @Before
@@ -24,7 +22,8 @@ public class NewEmptyJUnitTest {
     public void testAdicionarJogadorDeBasquete(){
 
     	JogadorDeBasquete umJogador = new JogadorDeBasquete("Michael Jordan");
-        assertEquals("Michael Jordan", listaJogadoresDeBasquete.add(umJogador));
+        listaJogadoresDeBasquete.add(umJogador);
+        assertEquals(umJogador.getNome() , "Michael Jordan");
         
     }
      
@@ -33,7 +32,8 @@ public class NewEmptyJUnitTest {
 
     	JogadorDeBasquete umJogador = new JogadorDeBasquete("Michael Jordan");
         listaJogadoresDeBasquete.add(umJogador);
-        assertEquals(null, listaJogadoresDeBasquete.remove(umJogador));
+        listaJogadoresDeBasquete.remove(umJogador);
+        assertEquals(null, umJogador.getNome());
         
     }
 }
