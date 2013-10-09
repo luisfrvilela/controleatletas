@@ -2,10 +2,7 @@
 import controleatleta.ControleJogadorDeBasquete;
 import controleatleta.JogadorDeBasquete;
 import java.util.ArrayList;
-
-
 import org.junit.Before;
-
 import org.junit.Test;
 import static org.junit.Assert.*;
 
