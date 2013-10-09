@@ -1,4 +1,5 @@
 
+import controleatleta.ControleJogadorDeBasquete;
 import controleatleta.JogadorDeBasquete;
 import java.util.ArrayList;
 
@@ -11,29 +12,48 @@ import static org.junit.Assert.*;
 
 public class ControleJogadorDeBasqueteJUnitTest {
     
-                
-                private ArrayList<JogadorDeBasquete> listaJogadoresDeBasquete;
+    private ArrayList<JogadorDeBasquete> listaJogadoresDeBasquete;
+    private JogadorDeBasquete umJogadorDeBasquete;
+    private ControleJogadorDeBasquete umControle;
     
     @Before
     public void setUp() throws Exception {
+        
+        umJogadorDeBasquete = new JogadorDeBasquete("Michael Jordan");
+        umControle = new ControleJogadorDeBasquete();
+        
+    }
+    
+    @Test
+    public void testgetListaJogadoresDeBasquete(){
+       
+        assertNotNull(umControle.getListaJogadoresDeBasquete());
+    
     }
     
     @Test 
     public void testAdicionarJogadorDeBasquete(){
-
-    	JogadorDeBasquete umJogador = new JogadorDeBasquete("Michael Jordan");
-        listaJogadoresDeBasquete.add(umJogador);
-        assertEquals(umJogador.getNome() , "Michael Jordan");
+        
+        umControle.adicionar(umJogadorDeBasquete);
+        assertNotNull(umControle.getListaJogadoresDeBasquete());
         
     }
      
     @Test 
-    public void testRemoverJogadorDeBasquete(){
-
-    	JogadorDeBasquete umJogador = new JogadorDeBasquete("Michael Jordan");
-        listaJogadoresDeBasquete.add(umJogador);
-        listaJogadoresDeBasquete.remove(umJogador);
-        assertEquals(null, umJogador.getNome());
+    public void testPesquisarJogadorDeBasquete(){
         
+        umControle.adicionar(umJogadorDeBasquete);
+        assertEquals(umJogadorDeBasquete, umControle.pesquisar("Michael Jordan"));
+        assertNotNull(umControle.pesquisar("Michael Jordan"));
+    
+    }
+    
+    @Test 
+    public void testRemoverJogadorDeBasquete(){
+        
+        umControle.adicionar(umJogadorDeBasquete);
+        umControle.remover(umJogadorDeBasquete);
+    	assertNull(umControle.pesquisar("Michael Jordan"));
+    
     }
 }
